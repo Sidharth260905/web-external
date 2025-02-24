@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf9f6;
+  color: #333;
+}
+
+.container {
+  width: 80%;   
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.logo {
+  color: #ff9800; /* Example yellow color */
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hero {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 48%;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex; /* Added flex to align image and text */
+}
+
+.card img {
+  width: 200px; /* Adjust image width as needed */
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  .hero h1 {
+      font-size: 3rem;
+  }
+
+  .card {
+      width: 100%;
+      flex-direction: column; /* Stack image and text on smaller screens */
+  }
+
+  .card img {
+      width: 100%; /* Image takes full width on smaller screens */
+  }
+}
